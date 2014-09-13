@@ -2,6 +2,7 @@ var NONE = 'none';
 var VISIBLE = 'inline';
 
 var EventHandler       = require('../Events/EventHandler');
+var FamousEngine       = require('../../Libraries/MixedMode/src/famous/core/Engine');
 
 var Playing          = {};
 
@@ -13,12 +14,13 @@ EventHandler.setOutputHandler(Playing, Playing.eventOutput);
 
 Playing.initialize = function initialize()
 {
-    
+	console.log(1)
+ 	FamousEngine.createContext({ hasCamera: false });
 };
 
 Playing.update     = function update()
 {
-
+	FamousEngine.step();
 };
 
 Playing.show       = function show()
