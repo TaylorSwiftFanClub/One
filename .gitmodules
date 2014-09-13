@@ -1,0 +1,3 @@
+[submodule "Libraries/MixedMode"]
+	path = Libraries/MixedMode
+	url = git@github.com:FamousInternal/MixedMode.git
