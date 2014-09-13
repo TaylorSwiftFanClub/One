@@ -3,12 +3,9 @@ One
 
 Install:
 
-
-git submodule init --recursive --update
-
+git submodule update --recursive --init
 
 npm install -g watchify
-
 
 
 Develop:
