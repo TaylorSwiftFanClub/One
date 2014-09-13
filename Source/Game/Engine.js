@@ -1,6 +1,6 @@
 var EventHandler       = require('../Events/EventHandler');
 
-var Engine          = {};
+var Engine             = {};
 
 Engine.eventInput      = new EventHandler();
 Engine.eventOutput     = new EventHandler();

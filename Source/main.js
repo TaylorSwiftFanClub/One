@@ -40,4 +40,10 @@ function startGame()
 	Engine.setState(Playing);
 }
 
-requestAnimationFrame(Engine.step);
+function loop()
+{
+    Engine.step();
+    requestAnimationFrame(loop);
+}
+
+requestAnimationFrame(loop);
