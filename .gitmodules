@@ -1,3 +1,0 @@
-[submodule "lib/famous"]
-	path = lib/famous
-	url = git@github.com:FamousInternal/MixedMode.git
