@@ -3,10 +3,14 @@ One
 
 Install:
 
-git submodule update --recursive --init
+npm install
 
-npm install -g watchify
+cd Libraries/MixedMode
+npm install
 
+//back in root dir
+npm run submodules
+npm run watch
 
 Develop:
 

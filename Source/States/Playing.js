@@ -14,8 +14,8 @@ EventHandler.setOutputHandler(Playing, Playing.eventOutput);
 
 Playing.initialize = function initialize()
 {
-	console.log(1)
- 	FamousEngine.createContext({ hasCamera: false });
+	this.container = document.getElementById('playing');
+ 	FamousEngine.createContext(this.container);
 };
 
 Playing.update     = function update()
