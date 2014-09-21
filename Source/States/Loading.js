@@ -48,7 +48,14 @@ Loading.initialize = function initialize()
 
 Loading.load       = function load(asset)
 {
-    assetStack.push(asset);
+    if(Array.isArray(asset))
+    {
+        Array.prototype.push.apply(assetStack, asset);
+    }
+    else
+    {
+        assetStack.push(asset);
+    }
 };
 
 Loading.show       = function show()
